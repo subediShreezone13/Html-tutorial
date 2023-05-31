@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="10;"> -->
+    <title>form</title>
+</head>
+<body>
+   <form contenteditable="true" >
+      <fieldset>
+        <legend>FILL OUT YOUR INFORMATION</legend>
+       <label for="firstname">First Name</label>
+       <br/>
+       <input type="text" name="fname" id="firstname" placeholder="enter your first name" required>
+       <br/> 
+       <label for="lastname">Last Name</label>
+       <br/>
+       <input type="text" name="lname" id="lastname" readonly>
+       <br/>
+       <input type="hidden" name="user" value="admin">
+       <label for="email">E-mail Address</label>
+       <br/>
+       <input type="email" name="email" id="email" placeholder="example@something.com">
+       <br/>
+       <label for="dob">Date Of Birth</label>
+       <br/>
+       <input type="date" name="dob" id="dob">
+       <br/>
+       <label for="phone">Phone Number</label>
+       <br/>
+       <input type="number" name="phone" id="phone">
+       <br/>
+       <label>Gender</label>
+       <input type="radio" name="gender" value="male">Male
+       <input type="radio" name="gender" value="female">Female
+       <input type="radio" name="gender" value="others">Others
+       <br/>     
+        <label>choose any two</label>
+        <br/>
+        <input type="checkbox" name="subjects" value="web">Web
+        <input type="checkbox" name="subjects" value="mobile">Mobile
+        <input type="checkbox" name="subjects" value="networking">Networking 
+        <input type="checkbox" name="subjects" value="graphics">Graphics
+        <br/>
+        <label for="districts">District</label>
+        <select name="districts" id="districts">
+            <option></option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Bhaktapur">Bhaktapur</option>
+            <option value="Chitwan">Chitwan</option>
+            <option value="Baglung">Baglung</option>
+            <option value="Mustang">Mustang</option>
+            <option value="Kavre">Kavre</option>
+            <option value="Biratnagar">Biratnagar</option>
+            <option value="Birginj">Birgunj</option>
+            <option value="Pokhara">Pokhara</option>
+            <option value="Morang">Morang</option>
+            <option value="Illam">Illam</option>
+            <option value="Rolpa">Rolpa</option>
+            <option value="Rupendehi">Rupendehi</option>">
+            <option value="Lalitpur">Lalitpur</option>
+        </select>
+        <br/>
+        <label for="upload">image upload</label>
+        <br/>
+        <input type="file" name="upload" id="upload">
+        <br/>
+        <label for="password">password</label>
+        <br/>
+        <input type="password" name="pass" id="password" placeholder="****************">    
+        <br/>
+        <input type="search" name="search" id="search">
+        <br/>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </fieldset>
+   </form> 
+</body>
+</html>
